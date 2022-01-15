@@ -1,0 +1,2 @@
+# retain windows line-endings across platforms
+* text eol=crlf
