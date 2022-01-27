@@ -7,10 +7,10 @@
     "hash": "27cee9d47bd8a09222d15e272dbc9f459bfb9480d3fbed2aae27685904b19c9b",
     "extract_dir": "pester-5.3.1",
     "bin": "bin\\Pester.ps1",
-	"installer": {
-		"file": "build.ps1",
-		"args": ["Clean"],
-	},
+    "installer": {
+        "file": "build.ps1",
+        "args": "Clean"
+    },
     "post_install": [
         "$import = \"try { `$null = gcm pester -ea stop; import-module `\"$dir\\bin\\Pester.psm1`\" } catch { }\"",
         "",
